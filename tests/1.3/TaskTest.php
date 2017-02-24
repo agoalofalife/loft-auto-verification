@@ -21,9 +21,13 @@ class TaskTest extends TestCase
         ob_end_clean();
 
         // извлечь константу
-        $array = array_values( get_defined_constants());
-        $last  = count($array) - 1;
-         print_r( array_search($array[$last], get_defined_constants()));
+        print_r(get_defined_constants(true));
+//        $arrayKeys =  array_keys( get_defined_constants());
+//        $arrayValue  =  array_values( get_defined_constants());
+//        $this->assertTrue(defined(array_pop($arrayKeys)), 'Константа не определена');
+//        $last  = count($array) - 1;
+
+//         var_dump( array_search($array[$last], get_defined_constants()));
 
     }
 }
