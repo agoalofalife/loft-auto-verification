@@ -1,0 +1,30 @@
+{
+    "name": "agoalofalife/loft-auto-verification",
+    "require": {
+        "symfony/console": "^3.2",
+        "phpunit/phpunit": "^6.0"
+    },
+    "version":"0.0.1",
+    "authors": [
+        {
+            "name": "agoalofalife",
+            "email": "agoalofalife@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4" : {
+            "agoalofalife\\loft\\" : ""
+
+        },
+        "files": [
+
+        ],
+        "classmap": [
+            "tests/Environment.php"
+        ]
+    },
+    "bin": [
+        "loft"
+    ]
+}

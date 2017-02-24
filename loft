@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/bootstrap/autoload.php';
+set_time_limit(0);
+
+use Symfony\Component\Console\Application;
+use agoalofalife\loft\console\HomeworkCommand;
+
+
+$application = new Application();
+$application->add(new HomeworkCommand());
+
+$application->run();
